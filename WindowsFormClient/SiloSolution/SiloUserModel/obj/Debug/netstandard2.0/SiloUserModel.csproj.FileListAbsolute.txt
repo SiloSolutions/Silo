@@ -1,0 +1,9 @@
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloUserModel\bin\Debug\netstandard2.0\SiloUserModel.deps.json
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloUserModel\bin\Debug\netstandard2.0\SiloUserModel.dll
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloUserModel\bin\Debug\netstandard2.0\SiloUserModel.pdb
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloUserModel\obj\Debug\netstandard2.0\SiloUserModel.csprojAssemblyReference.cache
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloUserModel\obj\Debug\netstandard2.0\SiloUserModel.csproj.CoreCompileInputs.cache
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloUserModel\obj\Debug\netstandard2.0\SiloUserModel.AssemblyInfoInputs.cache
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloUserModel\obj\Debug\netstandard2.0\SiloUserModel.AssemblyInfo.cs
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloUserModel\obj\Debug\netstandard2.0\SiloUserModel.dll
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloUserModel\obj\Debug\netstandard2.0\SiloUserModel.pdb
