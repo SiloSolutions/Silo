@@ -2,6 +2,7 @@ using System;
 using Amazon.Lambda.Core;
 using SiloApplication.Models;
 using System.Data.SqlClient;
+using System.Threading.Tasks;
 
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
@@ -23,7 +24,7 @@ namespace AWSLambda.Test
             int anal = random.Next(0, 100);
 
             lambda.Temperature = random.Next(20, 35);
-            lambda.CreationDate = DateTime.Now;
+            lambda.CreationDate = DateTime.Now.AddHours(2);
 
             int num = random.Next(1, 4);
 
@@ -112,10 +113,9 @@ namespace AWSLambda.Test
 
             var logger = context.Logger;
 
+            string connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING");
+
             Lambda lambda = GetValue();
-
-
-            string connectionString = "Data Source=silodata.c9nj1x2p6gk5.eu-west-1.rds.amazonaws.com;Initial Catalog=silodata;User ID=admin;Password=password";
             
 
             var query = "INSERT INTO Lambda (LiquidLevel,Pressure,Temperature,CreationDate) VALUES (@LiquidLevel,@Pressure,@Temperature,@CreationDate)";
@@ -149,10 +149,7 @@ namespace AWSLambda.Test
                 //Console.ReadKey();
             }
             logger.Log(string.Format("Finished execution for function -- {0} at {1}",
-                               context.FunctionName, DateTime.Now));
-
-            //await Task.Delay(1000);
-
+                                context.FunctionName, DateTime.Now));
         }
     }      
 }
