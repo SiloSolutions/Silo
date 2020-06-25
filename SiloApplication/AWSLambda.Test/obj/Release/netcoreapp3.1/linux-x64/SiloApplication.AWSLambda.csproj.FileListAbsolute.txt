@@ -1,0 +1,17 @@
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\bin\Release\netcoreapp3.1\linux-x64\SiloApplication.AWSLambda.deps.json
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\bin\Release\netcoreapp3.1\linux-x64\SiloApplication.AWSLambda.runtimeconfig.json
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\bin\Release\netcoreapp3.1\linux-x64\SiloApplication.AWSLambda.runtimeconfig.dev.json
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\bin\Release\netcoreapp3.1\linux-x64\SiloApplication.AWSLambda.dll
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\bin\Release\netcoreapp3.1\linux-x64\SiloApplication.AWSLambda.pdb
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\bin\Release\netcoreapp3.1\linux-x64\SiloApplication.Data.dll
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\bin\Release\netcoreapp3.1\linux-x64\SiloApplication.Models.dll
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\bin\Release\netcoreapp3.1\linux-x64\SiloApplication.Data.pdb
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\bin\Release\netcoreapp3.1\linux-x64\SiloApplication.Models.pdb
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\obj\Release\netcoreapp3.1\linux-x64\SiloApplication.AWSLambda.csprojAssemblyReference.cache
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\obj\Release\netcoreapp3.1\linux-x64\SiloApplication.AWSLambda.AssemblyInfoInputs.cache
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\obj\Release\netcoreapp3.1\linux-x64\SiloApplication.AWSLambda.AssemblyInfo.cs
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\obj\Release\netcoreapp3.1\linux-x64\SiloApplication.AWSLambda.csproj.CoreCompileInputs.cache
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\obj\Release\netcoreapp3.1\linux-x64\SiloApplication.AWSLambda.csproj.CopyComplete
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\obj\Release\netcoreapp3.1\linux-x64\SiloApplication.AWSLambda.dll
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\obj\Release\netcoreapp3.1\linux-x64\SiloApplication.AWSLambda.pdb
+C:\Users\Luca\source\repos\SiloApplication\AWSLambda.Test\obj\Release\netcoreapp3.1\linux-x64\SiloApplication.AWSLambda.genruntimeconfig.cache

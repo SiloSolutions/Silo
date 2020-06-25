@@ -6303,19 +6303,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alesl\\.nuget\\packages\\": {}
+    "C:\\Users\\Luca\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alesl\\source\\repos\\SiloApplication\\SiloApplication.Models\\SiloApplication.Models.csproj",
+      "projectUniqueName": "C:\\Users\\Luca\\source\\repos\\SiloApplication\\SiloApplication.Models\\SiloApplication.Models.csproj",
       "projectName": "SiloApplication.Models",
-      "projectPath": "C:\\Users\\alesl\\source\\repos\\SiloApplication\\SiloApplication.Models\\SiloApplication.Models.csproj",
-      "packagesPath": "C:\\Users\\alesl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alesl\\source\\repos\\SiloApplication\\SiloApplication.Models\\obj\\",
+      "projectPath": "C:\\Users\\Luca\\source\\repos\\SiloApplication\\SiloApplication.Models\\SiloApplication.Models.csproj",
+      "packagesPath": "C:\\Users\\Luca\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Luca\\source\\repos\\SiloApplication\\SiloApplication.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\alesl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Luca\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6364,7 +6364,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

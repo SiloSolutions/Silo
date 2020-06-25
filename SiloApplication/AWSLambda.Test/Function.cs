@@ -1,111 +1,110 @@
 using System;
 using Amazon.Lambda.Core;
-using SiloApplication.Models;
 using System.Data.SqlClient;
-using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Linq;
+using SiloApplication.Models;
+using SiloApplication.Data;
 
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
-namespace AWSLambda.Test
+namespace SiloApplication.AWSLambda
 {
-
 
     public class Function
     {
+        private List<Lambda> lambdas = new List<Lambda>();
+        private static Random randomAnal = new Random();      
+        private int anal = randomAnal.Next(0, 1023);
+        private int option = 0;
 
-        public Lambda GetValue()
+        public Lambda GetData()
         {
             Lambda lambda = new Lambda();
             Random random = new Random();
+            
+            option = random.Next(1, 4);
 
-            int a = random.Next(1, 4);
-            int anal = random.Next(0, 100);
+            if(lambdas.Count == 0)
+                option = random.Next(1, 3);
+            else
+                lambda = lambdas.Last();
 
-            lambda.Temperature = random.Next(20, 35);
+            lambda.Temperature = random.Next(22, 30);
             lambda.CreationDate = DateTime.Now.AddHours(2);
 
-            int num = random.Next(1, 4);
-
-            switch (num)
+            if (lambda.LiquidLevel >= 150000)
+                option = 1;
+            if(lambda.LiquidLevel <= 10000)
+                option = 2;
+        
+            switch (option)
             {
                 case 1:
-
+                    
                     lambda = Down(lambda, anal);
+                    lambdas.Add(lambda);                   
                     break;
 
                 case 2:
 
                     lambda = Up(lambda, anal);
+                    lambdas.Add(lambda);
                     break;
 
                 case 3:
-                    lambda = Stay(lambda, anal);
+
+                    //sostituisce il metodo stay
+                    lambdas.Add(lambda);
                     break;
 
                 default:
-
-                    lambda = Stay(lambda, anal);
                     break;
             }
+
+            return lambdas.Last();
+        }  
+
+        public Lambda Down(Lambda lambda, int anal)
+        {
+            Random random = new Random();
+            int numRand = random.Next(0, 50);
+
+            var temp = anal - numRand;
+
+            lambda.LiquidLevel = Convert.ToDecimal(temp * 156.51);
+            lambda.Pressure = Convert.ToDecimal(temp * 0.0008);
+
+
+            Console.WriteLine("ci sono {0} litri di acqua", lambda.LiquidLevel);
+            Console.WriteLine("c'è una pressione di {0} bar", lambda.Pressure);
+            Console.WriteLine("");
+
+            return lambda;
+        }
+
+        public Lambda Up(Lambda lambda, int anal)
+        {
+            Random random = new Random();
+            int numRand = random.Next(0, 50);
+
+            var temp = anal + numRand;
+
+            lambda.LiquidLevel = Convert.ToDecimal(temp * 156.51);
+            lambda.Pressure = Convert.ToDecimal(temp * 0.0008);
+
+
+            Console.WriteLine("ci sono {0} litri di acqua", lambda.LiquidLevel);
+            Console.WriteLine("c'è una pressione di {0} bar", lambda.Pressure);
+            Console.WriteLine("");
 
             return lambda;
         }
 
         //Function Handler is an entry point to start execution of Lambda Function.  
-        //It takes Input Data as First Parameter and ObjectContext as Second  
-
-
-            public Lambda Down(Lambda lambda, int anal)
-            {
-                Random random1 = new Random();
-                int numRand = random1.Next(0, 50);
-
-                var temp = anal - numRand;
-
-                lambda.LiquidLevel = Convert.ToDecimal(temp * 156.51);
-                lambda.Pressure = Convert.ToDecimal(temp * 0.0008);
-
-
-                Console.WriteLine("ci sono {0} litri di acqua", lambda.LiquidLevel);
-                Console.WriteLine("c'è una pressione di {0} bar", lambda.Pressure);
-                Console.WriteLine("");
-
-                return lambda;
-            }
-
-            public Lambda Up(Lambda lambda, int anal)
-            {
-                Random random1 = new Random();
-                int numRand = random1.Next(0, 50);
-
-                var temp = anal + numRand;
-
-                lambda.LiquidLevel = Convert.ToDecimal(temp * 156.51);
-                lambda.Pressure = Convert.ToDecimal(temp * 0.0008);
-
-
-                Console.WriteLine("ci sono {0} litri di acqua", lambda.LiquidLevel);
-                Console.WriteLine("c'è una pressione di {0} bar", lambda.Pressure);
-                Console.WriteLine("");
-
-                return lambda;
-
-            }
-
-            public Lambda Stay(Lambda lambda, int anal)
-            {
-
-                lambda.LiquidLevel = Convert.ToDecimal(anal * 156.51);
-                lambda.Pressure = Convert.ToDecimal(anal * 0.0008);
-
-                Console.WriteLine("ci sono {0} litri di acqua", lambda.LiquidLevel);
-                Console.WriteLine("c'è una pressione di {0} bar", lambda.Pressure);
-                Console.WriteLine("");
-
-                return lambda;
-            }
+        //It takes Input Data as First Parameter and ObjectContext as Second
 
 
         public void FunctionHandler(ILambdaContext context)
@@ -113,43 +112,24 @@ namespace AWSLambda.Test
 
             var logger = context.Logger;
 
-            string connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING");
+            IDataAccess data = new SQLDataAccess();
 
-            Lambda lambda = GetValue();
-            
-
-            var query = "INSERT INTO Lambda (LiquidLevel,Pressure,Temperature,CreationDate) VALUES (@LiquidLevel,@Pressure,@Temperature,@CreationDate)";
-
-            SqlConnection con = new SqlConnection(connectionString);
-            //Replaced Parameters with Value
-            SqlCommand cmd = new SqlCommand(query, con);
-
-            //Pass values to Parameters
-            cmd.Parameters.AddWithValue("@LiquidLevel", lambda.LiquidLevel);
-            cmd.Parameters.AddWithValue("@Pressure", lambda.Pressure);
-            cmd.Parameters.AddWithValue("@Temperature", lambda.Temperature);
-            cmd.Parameters.AddWithValue("@CreationDate", lambda.CreationDate);
+            Lambda lambda = GetData();
 
             try
             {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                LambdaLogger.Log("Insert record in the table");
-                //Console.WriteLine("Records Inserted Successfully");
-                logger.Log("Records Inserted Successfully");
+                data.Insert(lambda);
+
+                LambdaLogger.Log("Insert record in the table" + Environment.NewLine);
+                logger.Log("Records Inserted Successfully" + Environment.NewLine);
             }
             catch (SqlException e)
             {
                 LambdaLogger.Log("Error Generated. Details: " + e.ToString());
-                //Console.WriteLine("Error Generated. Details: " + e.ToString());
-            }
-            finally
-            {
-                con.Close();
-                //Console.ReadKey();
+                logger.Log("Error Generated. Details: " + e.ToString());
             }
             logger.Log(string.Format("Finished execution for function -- {0} at {1}",
-                                context.FunctionName, DateTime.Now));
+                                context.FunctionName, DateTime.Now.AddHours(2)));       
         }
     }      
 }

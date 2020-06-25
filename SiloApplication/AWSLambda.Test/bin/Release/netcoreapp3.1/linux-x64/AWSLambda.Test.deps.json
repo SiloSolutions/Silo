@@ -9,11 +9,11 @@
     ".NETCoreApp,Version=v3.1/linux-x64": {
       "AWSLambda.Test/1.0.0": {
         "dependencies": {
-          "AWSSDK": "2.3.55.2",
           "AWSSDK.Lambda": "3.3.109.37",
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.SystemTextJson": "2.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.4",
+          "SiloApplication.Data": "1.0.0",
           "SiloApplication.Models": "1.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0",
           "System.Data.SqlClient": "4.8.1"
@@ -38,14 +38,6 @@
           "lib/netcoreapp3.1/Amazon.Lambda.Serialization.SystemTextJson.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "AWSSDK/2.3.55.2": {
-        "runtime": {
-          "lib/net45/AWSSDK.dll": {
-            "assemblyVersion": "2.3.55.2",
-            "fileVersion": "2.3.55.2"
           }
         }
       },
@@ -1034,6 +1026,14 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "SiloApplication.Data/1.0.0": {
+        "dependencies": {
+          "SiloApplication.Models": "1.0.0"
+        },
+        "runtime": {
+          "SiloApplication.Data.dll": {}
+        }
+      },
       "SiloApplication.Models/1.0.0": {
         "dependencies": {
           "AWSSDK.Lambda": "3.3.109.37",
@@ -1064,13 +1064,6 @@
       "sha512": "sha512-WPtMxw5jwEcVbe0Ro/bF0VDnict/zoCW0r6dfRIIOthjO+fVMgDyGYa4Pkz6ptgCCFcnhQuOq6iebYw1LRZeIQ==",
       "path": "amazon.lambda.serialization.systemtextjson/2.0.1",
       "hashPath": "amazon.lambda.serialization.systemtextjson.2.0.1.nupkg.sha512"
-    },
-    "AWSSDK/2.3.55.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-zy/6psTOx9c8LaZqL1tUtiGKMpd35b16TNRctz/N6Qc6hqFeOjyZ5WVhn89szJkkZtotcMFyfq58Y2RfyRxxUg==",
-      "path": "awssdk/2.3.55.2",
-      "hashPath": "awssdk.2.3.55.2.nupkg.sha512"
     },
     "AWSSDK.Core/3.3.107.7": {
       "type": "package",
@@ -1960,6 +1953,11 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "SiloApplication.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "SiloApplication.Models/1.0.0": {
       "type": "project",

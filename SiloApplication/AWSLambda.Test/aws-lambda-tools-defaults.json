@@ -13,15 +13,10 @@
     "function-runtime" : "dotnetcore3.1",
     "function-memory-size" : 256,
     "function-timeout"     : 900,
-    "function-handler"     : "AWSLambda.Test::AWSLambda.Test.Function::FunctionHandler",
+    "function-handler"     : "SiloApplication.AWSLambda::SiloApplication.AWSLambda.Function::FunctionHandler",
     "function-name"        : "EventRegistration",
     "function-description" : "",
     "function-role"        : "arn:aws:iam::240595528763:role/aws2020-lambda",
     "tracing-mode"         : "PassThrough",
-    "environment-variables" : {
-        "DB_ENDPOINT" : "silodata.c9nj1x2p6gk5.eu-west-1.rds.amazonaws.com",
-        "DATABASE"    : "silodata",
-        "USERNAME"    : "admin",
-        "PASSWORD"    : "password"
-    }
+    "environment-variables" : ""
 }
