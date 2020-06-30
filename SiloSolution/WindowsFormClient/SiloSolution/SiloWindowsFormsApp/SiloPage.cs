@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace SiloWindowsFormsApp
 {
-    //73 ore
+    //86 ore
 
     //Splash screen finito
     //Login/Registrazione finiti

@@ -1,8 +1,8 @@
-﻿using SiloUserModel;
+﻿using SiloModel;
 using System;
 using System.Collections.Generic;
 
-namespace SiloUserData
+namespace SiloData
 {
     public interface IDataRepository
     {

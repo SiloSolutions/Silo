@@ -27,8 +27,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Federico\\Desktop\\SiloSolution\\WindowsFormClient\\SiloSolution\\SiloUserModel\\SiloUserModel.csproj": {
-                "projectPath": "C:\\Users\\Federico\\Desktop\\SiloSolution\\WindowsFormClient\\SiloSolution\\SiloUserModel\\SiloUserModel.csproj"
+              "C:\\Users\\Federico\\Desktop\\SiloSolution\\WindowsFormClient\\SiloSolution\\SiloUserModel\\SiloModel.csproj": {
+                "projectPath": "C:\\Users\\Federico\\Desktop\\SiloSolution\\WindowsFormClient\\SiloSolution\\SiloUserModel\\SiloModel.csproj"
               }
             }
           }
@@ -83,12 +83,12 @@
         }
       }
     },
-    "C:\\Users\\Federico\\Desktop\\SiloSolution\\WindowsFormClient\\SiloSolution\\SiloUserModel\\SiloUserModel.csproj": {
+    "C:\\Users\\Federico\\Desktop\\SiloSolution\\WindowsFormClient\\SiloSolution\\SiloUserModel\\SiloModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Federico\\Desktop\\SiloSolution\\WindowsFormClient\\SiloSolution\\SiloUserModel\\SiloUserModel.csproj",
-        "projectName": "SiloUserModel",
-        "projectPath": "C:\\Users\\Federico\\Desktop\\SiloSolution\\WindowsFormClient\\SiloSolution\\SiloUserModel\\SiloUserModel.csproj",
+        "projectUniqueName": "C:\\Users\\Federico\\Desktop\\SiloSolution\\WindowsFormClient\\SiloSolution\\SiloUserModel\\SiloModel.csproj",
+        "projectName": "SiloModel",
+        "projectPath": "C:\\Users\\Federico\\Desktop\\SiloSolution\\WindowsFormClient\\SiloSolution\\SiloUserModel\\SiloModel.csproj",
         "packagesPath": "C:\\Users\\Federico\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Federico\\Desktop\\SiloSolution\\WindowsFormClient\\SiloSolution\\SiloUserModel\\obj\\",
         "projectStyle": "PackageReference",

@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SiloUserModel
+namespace SiloModel
 {
     [Table("Users")]
     public class User

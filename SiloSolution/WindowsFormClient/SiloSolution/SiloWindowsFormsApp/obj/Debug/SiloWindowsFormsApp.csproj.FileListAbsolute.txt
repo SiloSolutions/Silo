@@ -33,8 +33,11 @@ C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindow
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\Dapper.Contrib.dll
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\Dapper.dll
-C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\SiloUserData.dll
-C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\SiloUserModel.dll
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\LiveCharts.dll
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\SiloData.dll
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\SiloModel.dll
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\System.Buffers.dll
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\System.Collections.Immutable.dll
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\System.ComponentModel.Annotations.dll
@@ -43,10 +46,8 @@ C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindow
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\System.ValueTuple.dll
-C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\UnityEngine.dll
-C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\MindFusion.Scripting.dll
-C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\SiloUserData.pdb
-C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\SiloUserModel.pdb
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\SiloData.pdb
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\SiloModel.pdb
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
@@ -76,6 +77,12 @@ C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindow
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\Dapper.xml
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\Dapper.Contrib.xml
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\LiveCharts.pdb
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\LiveCharts.xml
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\System.Buffers.xml
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\System.Collections.Immutable.xml
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\System.Data.SqlClient.xml
@@ -83,7 +90,6 @@ C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindow
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\System.ValueTuple.xml
-C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\bin\Debug\UnityEngine.xml
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\obj\Debug\SiloWindowsFormsApp.csprojAssemblyReference.cache
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\obj\Debug\SiloWindowsFormsApp.exe.config
 C:\Users\Federico\Desktop\SiloSolution\WindowsFormClient\SiloSolution\SiloWindowsFormsApp\obj\Debug\SiloWindowsFormsApp.BootPage.resources

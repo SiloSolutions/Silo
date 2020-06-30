@@ -1,10 +1,10 @@
-﻿using SiloUserModel;
+﻿using SiloModel;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using Dapper;
 
-namespace SiloUserData
+namespace SiloData
 {
     public class DataRepository : IDataRepository
     {

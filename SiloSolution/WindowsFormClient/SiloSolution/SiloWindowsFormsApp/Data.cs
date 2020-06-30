@@ -1,4 +1,5 @@
-﻿using SiloUserData;
+﻿
+using SiloData;
 using System;
 using System.Diagnostics;
 using System.Drawing;
@@ -42,8 +43,22 @@ namespace SiloWindowsFormsApp
             try
             {
                 var list = data.GetAll();
+
                 dataGridView.DataSource = list;
                 dataGridView.Columns["CreationDate"].DefaultCellStyle.Format = "dd/MM/yyyy HH:mm:ss";
+
+                dataGridView.Columns[1].DefaultCellStyle.Format = "N0";
+
+                dataGridView.Columns[0].HeaderText = "Date";
+
+                string copyrightUnicode = "00B1";
+                int value = int.Parse(copyrightUnicode, System.Globalization.NumberStyles.HexNumber);
+                string symbol = char.ConvertFromUtf32(value).ToString();
+
+                dataGridView.Columns[1].HeaderText = "Liquid Level (" + symbol + "156 L)";
+                dataGridView.Columns[2].HeaderText = "Pressure (mbar)";
+                dataGridView.Columns[3].HeaderText = "Temperature (°C)";
+
             }
             catch (Exception e)
             {
@@ -51,7 +66,6 @@ namespace SiloWindowsFormsApp
             }
 
         }
-
 
         private void timePickerTo_ValueChanged(object sender, EventArgs e)
         {
@@ -66,6 +80,18 @@ namespace SiloWindowsFormsApp
                     var listDate = data.SelectDate(dateFrom, dateTo);
                     dataGridView.DataSource = listDate;
                     dataGridView.Columns["CreationDate"].DefaultCellStyle.Format = "dd/MM/yyyy HH:mm:ss";
+
+                    dataGridView.Columns[0].HeaderText = "Date";
+
+                    dataGridView.Columns[1].DefaultCellStyle.Format = "N0";
+
+                    string copyrightUnicode = "00B1";
+                    int value = int.Parse(copyrightUnicode, System.Globalization.NumberStyles.HexNumber);
+                    string symbol = char.ConvertFromUtf32(value).ToString();
+
+                    dataGridView.Columns[1].HeaderText = "Liquid Level (" + symbol + "156 L)";
+                    dataGridView.Columns[2].HeaderText = "Pressure (mbar)";
+                    dataGridView.Columns[3].HeaderText = "Temperature (°C)";
                 }
                 catch (Exception ex)
                 {
@@ -76,22 +102,27 @@ namespace SiloWindowsFormsApp
 
         private void refreshPage(object sender, EventArgs e)
         {
-            IDataRepository data = new DataRepository(_configuration);
+            var moment = DateTime.Now;
 
-            try
+            if (moment.Second >= 01 && moment.Second <= 06)
             {
-                var list = data.GetAll();
-                dataGridView.DataSource = list;
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine("Error " + ex);
+                IDataRepository data = new DataRepository(_configuration);
+
+                try
+                {
+                    var list = data.GetAll();
+                    dataGridView.DataSource = list;
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("Error " + ex);
+                }
             }
         }
 
         private void Data_Load(object sender, EventArgs e)
         {
-            timer.Interval = 60000;
+            timer.Interval = 5000;
             timer.Tick += new EventHandler(refreshPage);
             timer.Start();
         }

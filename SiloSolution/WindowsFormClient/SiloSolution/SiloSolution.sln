@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{49C7C5C9-576E-4EF2-9E85-F767D73895F9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiloWindowsFormsApp", "SiloWindowsFormsApp\SiloWindowsFormsApp.csproj", "{CE61EC0D-C24E-4847-9A91-95C00B0ABBDA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiloUserModel", "SiloUserModel\SiloUserModel.csproj", "{45DAADD1-6E9A-4286-88D9-A9FEB42A5675}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiloModel", "SiloUserModel\SiloModel.csproj", "{45DAADD1-6E9A-4286-88D9-A9FEB42A5675}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiloUserData", "SiloUserData\SiloUserData.csproj", "{328AB2E9-4CD4-407F-A137-9CD4CB307F38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiloData", "SiloUserData\SiloData.csproj", "{328AB2E9-4CD4-407F-A137-9CD4CB307F38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{49C7C5C9-576E-4EF2-9E85-F767D73895F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{49C7C5C9-576E-4EF2-9E85-F767D73895F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{49C7C5C9-576E-4EF2-9E85-F767D73895F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{49C7C5C9-576E-4EF2-9E85-F767D73895F9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CE61EC0D-C24E-4847-9A91-95C00B0ABBDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CE61EC0D-C24E-4847-9A91-95C00B0ABBDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE61EC0D-C24E-4847-9A91-95C00B0ABBDA}.Release|Any CPU.ActiveCfg = Release|Any CPU

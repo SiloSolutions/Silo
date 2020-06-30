@@ -1,9 +1,9 @@
-﻿using SiloUserModel;
+﻿using SiloModel;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SiloUserData
+namespace SiloData
 {
     public interface IUserRepository
     {

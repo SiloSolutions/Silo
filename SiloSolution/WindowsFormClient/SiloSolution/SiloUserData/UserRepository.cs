@@ -1,11 +1,11 @@
-﻿using SiloUserModel;
+﻿using SiloModel;
 using System;
 using System.Data.SqlClient;
 using Dapper;
 using System.Threading;
 using System.IO;
 
-namespace SiloUserData
+namespace SiloData
 {
     public class UserRepository : IUserRepository
     {
